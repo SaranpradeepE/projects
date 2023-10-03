@@ -1,0 +1,58 @@
+@import url()
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid yellow;
+    box-shadow: 0 0 0px lightyellow;
+    font-size: 25px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#status{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+button{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    background-color: red;
+    border-radius: 6px ;
+
+}
+.win{
+    animation: winAnimation ease-in-out 1s infinite;
+
+}
+@keyframes winAnimation {
+        0%{background-color: #2c3a47;}
+        100%{background: color #130f40;}
+    
+}
